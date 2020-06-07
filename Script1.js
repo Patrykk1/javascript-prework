@@ -2,62 +2,73 @@
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('Wylosowana liczba to: ' + randomNumber);
+function printMessage(msg){
+	let div = document.createElement('div');
+	div.innerHTML = msg;
+	document.getElementById('messages').appendChild(div);
+}
+
+function clearMessages(){
+	document.getElementById('messages').innerHTML = '';
+}
+let computerMove = `kamieÅ„`;
+let playerMove = 'papier';
 
 let computerMove = 'nieznany ruch';
 
 if (randomNumber == 1) {
-    computerMove = 'kamieñ';
+    computerMove = 'kamieÃ±';
 }
 
-printMessage('Mój ruch to: ' + computerMove);
+printMessage('MÃ³j ruch to: ' + computerMove);
 if (randomNumber == 2) {
     computerMove = 'papier';
 }
-printMessage('Mój ruch to: ' + computerMove);
+printMessage('MÃ³j ruch to: ' + computerMove);
 if (randomNumber == 3) {
-    computerMove = 'no¿yce';
+    computerMove = 'noÂ¿yce';
 }
-printMessage('Mój ruch to: ' + computerMove);
+printMessage('MÃ³j ruch to: ' + computerMove);
 
-let playerInput = prompt('Wybierz swój ruch! 1: kamieñ, 2: papier, 3: no¿yce.');
+let playerInput = prompt('Wybierz swÃ³j ruch! 1: kamieÃ±, 2: papier, 3: noÂ¿yce.');
 
-console.log('Gracz wpisa³: ' + playerInput);
+console.log('Gracz wpisaÂ³: ' + playerInput);
 
 let playerMove = 'nieznany ruch';
 
 if (playerInput == '1') {
-    playerMove = 'kamieñ';
+    playerMove = 'kamieÃ±';
 }
 
-printMessage('Twój ruch to: ' + playerMove);
+printMessage('TwÃ³j ruch to: ' + playerMove);
 if (playerInput == '2') {
     playerMove = 'papier';
 }
 
-printMessage('Twój ruch to: ' + playerMove);
+printMessage('TwÃ³j ruch to: ' + playerMove);
 if (playerInput == '3') {
-    playerrMove = 'no¿yce';
+    playerrMove = 'noÂ¿yce';
 }
 
-printMessage('Twój ruch to: ' + playerMove);
+printMessage('TwÃ³j ruch to: ' + playerMove);
 
-if (computerMove == 'kamieñ' && playerMove == 'papier') {
+if (computerMove == 'kamieÃ±' && playerMove == 'papier') {
     printMessage('Ty wygrywasz!');
-    if (computerMove == 'papier' && playerMove == 'kamieñ') {
+    if (computerMove == 'papier' && playerMove == 'kamieÃ±') {
         printMessage('Ty przegrywasz!');
-        if (computerMove == 'no¿yce' && playerMove == 'papier') {
+        if (computerMove == 'noÂ¿yce' && playerMove == 'papier') {
             printMessage('Ty przegrywasz!');
-            if (computerMove == 'kamieñ' && playerMove == 'kamieñ') {
+            if (computerMove == 'kamieÃ±' && playerMove == 'kamieÃ±') {
                 printMessage('REMIS!');
-                if (computerMove == 'no¿yce' && playerMove == 'no¿yce') {
+                if (computerMove == 'noÂ¿yce' && playerMove == 'noÂ¿yce') {
                     printMessage('REMIS!');
                     if (computerMove == 'papier' && playerMove == 'papier') {
                         printMessage('REMIS!');
-                        if (computerMove == 'kamieñ' && playerMove == 'no¿yce') {
+                        if (computerMove == 'kamieÃ±' && playerMove == 'noÂ¿yce') {
                             printMessage('Ty przegrywasz!');
-                            if (computerMove == 'papier' && playerMove == 'no¿yce') {
+                            if (computerMove == 'papier' && playerMove == 'noÂ¿yce') {
                                 printMessage('Ty wygrywasz!');
-                                if (computerMove == 'no¿yce' && playerMove == 'kamieñ') {
+                                if (computerMove == 'noÂ¿yce' && playerMove == 'kamieÃ±') {
                                     printMessage('Ty wygrywasz!');
                                     if (playerMove == 'nieznany ruch') {
                                         printMessage('Nieznany ruch!');
