@@ -8,3 +8,23 @@ function printMessage(msg) {
 function clearMessages() {
 	document.getElementById('messages').innerHTML = '';
 }
+
+function getMoveName(argMoveId){
+  if(argMoveId == 1){
+    return 'kamień';
+  } else {
+    printMessage('Nie znam ruchu o id ' + argMoveId + '.');
+    return 'nieznany ruch';
+  }
+  if(argMoveId == 2){
+    return 'papier';
+  } else {
+    printMessage('Nie znam ruchu o id ' + argMoveId + '.');
+    return 'nieznany ruch';
+  }
+  if(argMoveId == 3){
+    return 'nożyce';
+  } else {
+    printMessage('Nie znam ruchu o id ' + argMoveId + '.');
+    return 'nieznany ruch';
+  }
