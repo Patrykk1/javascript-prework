@@ -1,5 +1,8 @@
 // JavaScript source code
 function playGame (){
+ clearMessages
+ 
+ let playerInput = prompt('Wybierz swój ruch! 1: kamieñ, 2: papier, 3: no¿yce.');
 
  let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -22,8 +25,6 @@ function playGame (){
  }
  printMessage('Mój ruch to: ' + computerMove);
  */
-
- let playerInput = prompt('Wybierz swój ruch! 1: kamieñ, 2: papier, 3: no¿yce.');
 
  console.log('Gracz wpisa³: ' + playerInput);
 
@@ -75,11 +76,20 @@ function playGame (){
 
  let playerMove = argPlayerMove(randomNumber);
 
- let testButton = document.getElementById('test-button');
+ let play-rock = document.getElementById('kamień');
+
+ testButton.addEventListener('click', buttonClicked);
+ 
+ let play-paper = document.getElementById('papier');
+
+ testButton.addEventListener('click', buttonClicked);
+ 
+ let play-scissors = document.getElementById('nożyce');
 
  testButton.addEventListener('click', buttonClicked);
 
 }
+
 
 
 
