@@ -28,8 +28,6 @@ function playGame (){
 
  console.log('Gracz wpisa³: ' + playerInput);
 
-
- let playerMove = getMoveName(randomNumber);
  /*
  if (playerInput == '1') {
     playerMove = 'kamieñ';
