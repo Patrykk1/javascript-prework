@@ -72,19 +72,15 @@ function playGame (){
     else
     printMessage('Ty przegrywasz')
   */
- let computerMove = argComputerMove(randomNumber);
-
- let playerMove = argPlayerMove(randomNumber);
-
- let play-rock = document.getElementById('kamień');
+ let playRock = document.getElementById('kamień');
 
  testButton.addEventListener('click', buttonClicked);
  
- let play-paper = document.getElementById('papier');
+ let playPaper = document.getElementById('papier');
 
  testButton.addEventListener('click', buttonClicked);
  
- let play-scissors = document.getElementById('nożyce');
+ let playScissors = document.getElementById('nożyce');
 
  testButton.addEventListener('click', buttonClicked);
 
