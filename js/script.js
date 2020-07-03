@@ -84,7 +84,17 @@ function playGame (){
 
 }
 
+ let playRock = document.getElementById('kamień');
 
+ testButton.addEventListener('click', buttonClicked);
+ 
+ let playPaper = document.getElementById('papier');
+
+ testButton.addEventListener('click', buttonClicked);
+ 
+ let playScissors = document.getElementById('nożyce');
+
+ testButton.addEventListener('click', buttonClicked);
 
 
 
