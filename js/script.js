@@ -70,18 +70,6 @@ function playGame (){
     else
     printMessage('Ty przegrywasz')
   */
- let playRock = document.getElementById('kamień');
-
- testButton.addEventListener('click', buttonClicked);
- 
- let playPaper = document.getElementById('papier');
-
- testButton.addEventListener('click', buttonClicked);
- 
- let playScissors = document.getElementById('nożyce');
-
- testButton.addEventListener('click', buttonClicked);
-
 }
 
  let playRock = document.getElementById('kamień');
