@@ -1,6 +1,6 @@
 // JavaScript source code
 function playGame (){
- clearMessages
+ clearMessages()
  
  let playerInput = prompt('Wybierz swój ruch! 1: kamieñ, 2: papier, 3: no¿yce.');
 
@@ -74,15 +74,15 @@ function playGame (){
 
  let playRock = document.getElementById('kamień');
 
- testButton.addEventListener('click', buttonClicked);
- 
  let playPaper = document.getElementById('papier');
 
- testButton.addEventListener('click', buttonClicked);
- 
  let playScissors = document.getElementById('nożyce');
 
- testButton.addEventListener('click', buttonClicked);
+ playRock.addEventListener('click', buttonClicked);
+
+ playPaper.addEventListener('click', buttonClicked);
+
+ playScissors.addEventListener('click', buttonClicked);
 
 
 
