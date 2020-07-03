@@ -72,11 +72,11 @@ function playGame (){
   */
 }
 
- let playRock = document.getElementById('kamień');
+ let playRock = document.getElementById('play-rock');
 
- let playPaper = document.getElementById('papier');
+ let playPaper = document.getElementById('play-paper');
 
- let playScissors = document.getElementById('nożyce');
+ let playScissors = document.getElementById('play-scissors');
 
  playRock.addEventListener('click', buttonClicked);
 
