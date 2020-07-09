@@ -40,6 +40,7 @@ function getMoveName(argMoveId) {
     }
 
     function buttonClicked() {
+        clearMesseges()
         printMessage('Guzik został kliknięty');
     }
 
