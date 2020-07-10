@@ -39,7 +39,7 @@ function buttonClicked(event) {
         clearMesseges()
     
         const move = event.currentTarget.innerHTML;
-            printMessage('Guzik został kliknięty');
+            printMessage('Guzik ' + move + ' został kliknięty');
     
         const playerMove = move.toLowerCase();
     
