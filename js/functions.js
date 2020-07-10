@@ -36,7 +36,7 @@ function displayResult(argComputerMove, argPlayerMove) {
 }
 
 function buttonClicked(event) {
-        clearMesseges()
+        clearMesseges();
     
         const move = event.currentTarget.innerHTML;
             printMessage('Guzik ' + move + ' został kliknięty');
