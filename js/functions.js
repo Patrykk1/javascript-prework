@@ -12,20 +12,22 @@ function clearMessages() {
 function getMoveName(argMoveId) {
     if (argMoveId == 1) {
         return 'kamień';
-    } 
-     else if (argMoveId == 2){
+    }
+    else if (argMoveId == 2) {
         return 'papier';
     }
-     else if (argMoveId == 3) {
+    else if (argMoveId == 3) {
         return 'nożyce';
-    } 
-     else {
+    }
+    else {
         printMessage('Nie znam ruchu o id ' + argMoveId + '.');
         return 'nieznany ruch';
-        
+
+    }
+
 }
-    
-function displayResult(argComputerMove, argPlayerMove) {
+
+    function displayResult(argComputerMove, argPlayerMove) {
         printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
         if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
@@ -33,17 +35,17 @@ function displayResult(argComputerMove, argPlayerMove) {
         } else {
             printMessage('Tym razem przegrywasz :(');
         }
-}
+    }
 
-function buttonClicked(event) {
-        clearMesseges();
-    
+    function buttonClicked(event) {
+        clearMessages();
+
         const move = event.currentTarget.innerHTML;
-            printMessage('Guzik ' + move + ' został kliknięty');
-    
+        printMessage('Guzik ' + move + ' został kliknięty');
+
         const playerMove = move.toLowerCase();
-    
+
         playGame(playerMove);
-}
+    }
 
         
